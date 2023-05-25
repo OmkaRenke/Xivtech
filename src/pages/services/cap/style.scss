@@ -1,0 +1,52 @@
+.Capabilities{
+    width: 100%;
+    position: absolute;
+    top: calc(90vh + 40.494rem);
+    z-index: 999;
+    background: #ffffff;
+    .container{
+        margin-bottom: 20rem;
+        .title{
+            font-size: 4.8rem;
+            margin-bottom: 3rem;
+        }
+        .gridclass{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,40rem);
+            gap: 2rem;
+            .capCard{
+                width: 34.7rem;
+                height: 27.1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                word-wrap: break-word;
+                background-color: #fff;
+                border: 1.5px solid rgba(0,0,0,.125);
+                border-radius: 0.25rem;
+                cursor: pointer;
+                .thumbnailImg{
+                    width: 100%;
+                    height: 70%; 
+                    .lazy-load-image-background{
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                           
+                        }
+                    }
+                }
+                .description{
+                    font-size: 1.6rem;
+                    padding: 2rem;
+                    color: #007bff;
+                }
+            }
+        }
+    }
+}
+
